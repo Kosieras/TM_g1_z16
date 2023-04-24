@@ -1,0 +1,60 @@
+/**
+ * Boost Source: https://arcboosts.com/boosts/46/chatgpt-embed-in-all-page#code_block
+ */
+
+#containerChatbot{
+  position: fixed;
+  z-index: 999;
+  margin-top: 250px;
+  top: 0;
+    background-color: #202123;
+  right: -2px;
+  border-radius: 10px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2), 
+            0px 6px 12px rgba(0, 0, 0, 0.2), 
+            0px 10px 20px rgba(0, 0, 0, 0.2);
+
+}
+
+#closeChatbot{
+  position: absolute;
+  right: 5px;
+  top:100px;
+  z-index: 10;
+  padding: 10px;
+  height: 50px;
+  background-color: #202123;
+  color: white;
+  text-align: center;
+  font-size: 10px;
+  border: 1px solid whitesmoke;
+  border-right: unset;
+  border-bottom-left-radius: 10px;
+  border-top-left-radius: 10px;
+
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2), 
+            0px 6px 12px rgba(0, 0, 0, 0.2), 
+            0px 10px 20px rgba(0, 0, 0, 0.2);
+}
+#openChatbot{
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+  background-color: #202123;
+  color: white;
+  text-align: center;
+  font-size: 10px;
+}
+#openChatbot:hover, #closeChatbot:hover{
+  cursor: pointer;
+}
+
+.hide{
+  display: none!important;
+}
